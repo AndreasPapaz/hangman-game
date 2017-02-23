@@ -1,0 +1,87 @@
+body {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 24px;
+	color: #16ffef;
+}
+
+.back {
+  background-image: url(http://i.imgur.com/eBcvILG.png);
+  
+  background-position: center center;
+  
+  background-attachment: fixed;
+  
+  background-size: cover;
+  
+  background-color: #464646;
+}
+
+#scoreboard {
+	background-color: black;
+	width: 12%;
+	margin-top: 2%;
+	padding: 1%;
+}
+
+
+#already-guessed {
+	background-color: black;
+	width: 50%;
+	margin-top: 2%;
+	padding: 1%;
+}
+
+
+#guess-remaining {
+	background-color: black;
+	width: 35%;
+	margin-top: 2%;
+	padding: 1%;
+}
+
+#current-word {
+	background-color: black;
+	width: 50%;
+	margin-top: 2%;
+	padding: 1%;
+}
+
+
+.hotspot rect {
+    opacity:0;
+    fill:black;
+  }
+.hotspot path {
+    fill: black;
+    stroke: #fff;
+    filter:url(#kitchen-hotspots-blur);
+    /*cursor:pointer;*/
+  }
+
+
+.flash { 
+	color: #66ccff;
+	-webkit-animation-name: flashanim; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .8s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+     animation-name: flashanim;
+    animation-duration: .8s;
+    animation-timing: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes flashanim {
+    0% {	color: #66ccff;}   
+    100% {	color: #178588;}
+}
+
+
+svg {
+	width: 100%;
+	height: 150px;
+	padding: 20px;
+	background-color: black;
+}
