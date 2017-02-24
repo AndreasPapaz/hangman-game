@@ -41,7 +41,7 @@ body {
 
 #current-word {
 	background-color: black;
-	width: 50%;
+	width: 52%;
 	margin-top: 2%;
 	padding: 1%;
 }
@@ -60,7 +60,9 @@ body {
 
 
 .flash { 
+
 	color: #66ccff;
+	font-size: 48;
 	-webkit-animation-name: flashanim; /* Chrome, Safari, Opera */
     -webkit-animation-duration: .8s; /* Chrome, Safari, Opera */
     -webkit-animation-timing: ease-in-out;
@@ -71,6 +73,12 @@ body {
     animation-timing: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    
+    width: 100%;
+    height: 20%;
+    margin-top: 0;
+    padding: 8px;
+    text-align: center;
 }
 
 @keyframes flashanim {
@@ -79,9 +87,12 @@ body {
 }
 
 
-svg {
+object {
+  position: relative;
 	width: 100%;
-	height: 150px;
-	padding: 20px;
+	margin: 0;
+	height: 110px;
+	padding: 10px;
 	background-color: black;
 }
+
