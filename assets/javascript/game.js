@@ -82,7 +82,7 @@ function lettersMissed() {
 
 
 document.onkeyup = function(event) {
-  
+  // find a way to use only alphabet keys????
   // userGuess = event.key.toUpperCase();
   userGuess = event.key.toUpperCase();
   
@@ -92,6 +92,7 @@ document.onkeyup = function(event) {
   
 //   i want to add a print to the page of the correct word before the alert
 //  i also need to fix the attempts counter!
+
   if (blanks.toString() === hiddenChar.toString()) {
     
     currentWord.innerHTML = "Current Word: " + hiddenChar.toString();
